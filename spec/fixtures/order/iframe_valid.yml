@@ -1,0 +1,11 @@
+---
+:request:
+  :url: '/iframe/v1/auth?signature=5cf51fade1cb9a9237fc59f54c857edb1cc8f3e1&store_id=1'
+  :body: '{"callback_url":"http://example.com/callback_url","redirect_url":"http://example.com/redirect_url","current_order":{"sum":"19.99","order_id":"ORDER1"}}'
+:response:
+  :body: >
+    {
+      "status": 0,
+      "message": "Payload valid",
+      "iframe_url": "https://r.revoplus.ru/iframe/v1/form/19ab48f32fbeb6f21e04d86d5f6d63a1780e1b42"
+    }

@@ -1,0 +1,20 @@
+---
+:request:
+  :url: '/api/external/v1/client/limit?signature=7d0019b6231613260a645ba13a1a20478dd5386a&store_id=1'
+  :body: '{"client":{"phone":"9031234567"}}'
+:response:
+  :body: >
+    {
+        "client":
+            {
+                "mobile_phone":null,
+                "limit_amount":"9950.00",
+                "status":"active"
+            },
+        "meta":
+            {
+                "message":"Payload valid",
+                "status":0
+            }
+    }
+

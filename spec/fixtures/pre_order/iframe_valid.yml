@@ -1,0 +1,11 @@
+---
+:request:
+  :url_regexp: '\/iframe\/v1\/auth\?signature=(.*)&store_id=1'
+  :body_regexp: '.*'
+:response:
+  :body: >
+    {
+      "status": 0,
+      "message": "Payload valid",
+      "iframe_url": "https://r.revoplus.ru/iframe/v1/form/c03b49b0a13dca3f0db45eda2d494ed439f8e1bb"
+    }
