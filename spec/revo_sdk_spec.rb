@@ -1,11 +1,14 @@
 require 'spec_helper'
 
 RSpec.describe RevoSDK do
-  it 'has a version number' do
-    expect(RevoSDK::VERSION).not_to be nil
+  describe '#config=' do
+    before { @old_config = RevoSDK.config }
+    after { RevoSDK.config = @old_config }
+
+    it { expect { RevoSDK.config = 'config' }.to change { RevoSDK.config }.to('config') }
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  describe '#config' do
+    it { expect(RevoSDK.config).to be_instance_of(RevoSDK::Config) }
   end
 end

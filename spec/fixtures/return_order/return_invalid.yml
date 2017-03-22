@@ -1,0 +1,10 @@
+---
+:request:
+  :url: '/online/v1/return?signature=7cbd7b5f41ea85ca90962417c3957ea3a7ad2ad1&store_id=1'
+  :body: '{"order_id":"ORDER","sum":"4.49","kind":"cancel"}'
+:response:
+  :body: >
+    {
+      "status": 21,
+      "message": "Order not exist"
+    }

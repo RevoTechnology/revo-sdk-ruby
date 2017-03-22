@@ -1,0 +1,10 @@
+---
+:request:
+  :url: '/iframe/v1/auth?store_id=1&signature=ead1e691f704902e76efa395d15f39630a459456'
+  :body: '{"callback_url":"","redirect_url":"http://example.com/redirect_url","current_order":{"sum":"49.95","order_id":"ORDER2"}}'
+:response:
+  :body: >
+    {
+      "status": 40,
+      "message": "Order callback_url missing"
+    }

@@ -1,0 +1,10 @@
+---
+:request:
+  :url: '/online/v1/return?signature=07ee0a6a2072eac975013df8149ff7fbde589b8f&store_id=1'
+  :body: '{"order_id":"ORDER12345","sum":"4.49","kind":"cancel"}'
+:response:
+  :body: >
+    {
+      "status": 0,
+      "message": "Payload valid"
+    }

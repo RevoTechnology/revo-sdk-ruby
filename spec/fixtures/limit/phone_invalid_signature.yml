@@ -1,0 +1,10 @@
+---
+:request:
+  :url: '/api/external/v1/client/limit?signature=eca6b375281bfc53b535752ed9167e74159931fb&store_id=1'
+  :body: '{"client":{"phone":"9031234567"}}'
+:response:
+  :body: >
+    {
+      "client": null,
+      "meta": {"message":"Signature wrong","status": 61}
+    }
