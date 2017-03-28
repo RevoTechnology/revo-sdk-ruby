@@ -1,7 +1,7 @@
 ---
 :request:
-  :url: '/api/external/v1/client/limit?signature=eca6b375281bfc53b535752ed9167e74159931fb&store_id=1'
-  :body: '{"client":{"phone":"9031234567"}}'
+  :url: '/api/external/v1/client/limit?signature=177b53b69ec05a3b17afea71f2d85ca796d8b09a&store_id=1'
+  :body: '{"client":{"mobile_phone":"9031234567"}}'
 :response:
   :body: >
     {

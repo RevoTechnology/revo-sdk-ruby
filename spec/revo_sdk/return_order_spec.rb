@@ -16,7 +16,7 @@ RSpec.describe RevoSDK::ReturnOrder do
         stub_api_request('return_order/return_invalid').perform
       end
       it 'returns error message' do
-        expect { described_class.proceed(4.49, 'ORDER') }.to raise_error(RevoSDK::Client::Errors::WrongOrderIdFormat)
+        expect { described_class.proceed(4.49, 'ORDER') }.to raise_error(RevoSDK::API::Errors::WrongOrderIdFormat)
       end
     end
   end

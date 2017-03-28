@@ -19,7 +19,7 @@ RSpec.describe RevoSDK::Order do
       after { RevoSDK.config.callback_url = 'http://example.com/callback_url' }
 
       it 'returns error message' do
-        expect { described_class.get_iframe_link(49.95, 'ORDER2') }.to raise_error(RevoSDK::Client::Errors::OrderCallbackUrlMissing)
+        expect { described_class.get_iframe_link(49.95, 'ORDER2') }.to raise_error(RevoSDK::API::Errors::OrderCallbackUrlMissing)
       end
     end
   end

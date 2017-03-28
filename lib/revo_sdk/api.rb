@@ -1,5 +1,5 @@
 module RevoSDK
-  class Client
+  class API
     attr_reader :config
 
     ENDPOINTS = {
@@ -34,7 +34,7 @@ module RevoSDK
     def phone_payload(phone)
       data = {
         client: {
-          phone: phone
+          mobile_phone: phone
         }
       }
       JSON.generate(data)

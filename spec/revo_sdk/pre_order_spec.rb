@@ -19,7 +19,7 @@ RSpec.describe RevoSDK::PreOrder do
       after { RevoSDK.config.store_id = 1 }
 
       it 'returns error message' do
-        expect { described_class.get_iframe_link }.to raise_error(RevoSDK::Client::Errors::StoreNotFound)
+        expect { described_class.get_iframe_link }.to raise_error(RevoSDK::API::Errors::StoreNotFound)
       end
     end
   end

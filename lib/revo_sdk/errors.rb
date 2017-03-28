@@ -1,5 +1,5 @@
 module RevoSDK
-  class Client
+  class API
     class Error < StandardError; end
     class ConnectionError < StandardError; end
 

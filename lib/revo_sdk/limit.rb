@@ -15,7 +15,7 @@ module RevoSDK
     end
 
     def phone(phone)
-      client = Client.new(config)
+      client = API.new(config)
       data = client.phone_payload(phone)
       client.call_service(data, 'phone')
     end

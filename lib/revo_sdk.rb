@@ -3,7 +3,7 @@ require 'json'
 
 require 'revo_sdk/version'
 require 'revo_sdk/config'
-require 'revo_sdk/client'
+require 'revo_sdk/api'
 require 'revo_sdk/errors'
 require 'revo_sdk/limit'
 require 'revo_sdk/pre_order'

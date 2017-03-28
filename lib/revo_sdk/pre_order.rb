@@ -15,7 +15,7 @@ module RevoSDK
     end
 
     def get_iframe_link(additional_params = {})
-      client = Client.new(config)
+      client = API.new(config)
       data = client.order_payload(1.00, "ORDER#{rand(9)**5}", additional_params)
       client.call_service(data, 'preorder')
     end

@@ -60,7 +60,7 @@ RevoSDK::PreOrder.get_iframe_url
 Use it to access iframe link with order service form. You need to pass correct `amount` and `order_id` parameters to receive proper response on your service callback.
 
 ```ruby
-RevoSDK::PreOrder.get_iframe_url(199.99, 'OR12345')
+RevoSDK::Order.get_iframe_url(199.99, 'OR12345')
 
 => "https://r.revoplus.ru/iframe/v1/form/302e6245644c1bf64b87awwefe9a8f2e9b89eef1"
 ```
