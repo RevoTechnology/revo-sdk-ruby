@@ -1,5 +1,9 @@
 # RevoSDK
 
+[![Gem Version](https://badge.fury.io/rb/revo_sdk.svg)](https://badge.fury.io/rb/revo_sdk)
+[![Build Status](https://api.travis-ci.org/RevoTechnology/revo-sdk-ruby.svg?branch=master)](https://travis-ci.org/RevoTechnology/revo-sdk-ruby)
+[![Code Climate](https://codeclimate.com/github/RevoTechnology/revo-sdk-ruby.png)](https://codeclimate.com/github/RevoTechnology/revo-sdk-ruby)
+
 ## Installation
 
 Add this line to your application's Gemfile:
